@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
-<body class="week-page"><a class="skip-link" href="#main-content">Skip to content</a><header class="navbar">
+<body class="week-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="top-section">
+        <header class="navbar">
             <div class="logo">
                 <a href="index.html" style="text-decoration:none; color:inherit; display:flex; flex-direction:column;">
                     <span class="logo-text">gachon diaries... ✈</span>
@@ -19,17 +22,198 @@
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="week1.html" class="active">Weekly Blog</a>
-                <a href="index.html#photos">Photos</a>                
+                <a href="photos.html">Photos</a>
+                
             </nav>
             <div class="header-right">
                 
-                <div class="header-quote">"and so the<br>adventure begins..."</div>
+                <div class="header-quote">"finding my feet<br>in seoul..."</div>
             </div>
         </header>
-<main id="main-content" class="entry-main">
-<a href="index.html#weekly" class="back-link">← All weekly diaries</a>
-<header class="entry-heading"><p class="week-date">8 - 14 Sept 2026</p><h1>Week 2</h1><h2 class="handwriting">Finding my feet</h2><p>Getting used to university life, meeting new friends, and exploring the neighbourhood for the first time.</p></header>
-<section class="entry-row"><div><span class="entry-number" aria-hidden="true">01 /</span><h2 class="handwriting">Little moments, big memories</h2><p class="draft-note">This diary is still to come. Check back for the full story.</p><!-- Add your diary paragraphs here. --></div><figure class="entry-polaroid"><span class="tape-top" aria-hidden="true"></span><img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=500&h=400&fit=crop" alt="Seoul Night"><figcaption>Finding my feet</figcaption></figure></section>
-<section class="entry-row"><div><span class="entry-number" aria-hidden="true">02 /</span><h2 class="handwriting">A page to remember ♡</h2><!-- Add another diary section and replace the image when ready. --><p class="draft-note">More photos and reflections will go here as the week unfolds.</p></div><figure class="entry-polaroid"><span class="tape-top" aria-hidden="true"></span><img src="hero.jpg" alt="Gachon University campus"><figcaption>a semester in korea</figcaption></figure></section>
-<div class="bottom-grids"><section class="paper-block"><h2 class="handwriting">What I learned ✧</h2><p>Reflections to come.</p></section><section class="paper-block"><h2 class="handwriting">Looking ahead ↗</h2><p>More adventures to come...</p></section></div>
-<nav class="pagination" aria-label="Weekly diary navigation"><a class="btn" href="week1.html">← Week 1</a><a class="btn" href="week3.html">Week 3 →</a></nav></main><footer class="site-footer" id="about"><div class="handwriting">gachon diaries... ✈<small>A SEMESTER IN KOREA</small></div><p>made with ♡<br>by a student, for the memories</p></footer><script src="script.js"></script></body></html>
+
+        <section class="week-hero">
+            <a href="index.html#weekly" class="back-link">← Back to Weekly Blog</a>
+            <div class="week-hero-content">
+                <div class="week-hero-text" style="position: relative;">
+                    <h1>week 2</h1>
+                    <p class="week-date">2 - 8 Sept 2026</p>
+                    <h2 class="week-subtitle handwriting">campus life &<br>city lights ♡</h2>
+                    
+                    <svg class="plane-doodle" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right: -210px; top: 45px; width: 160px; opacity: 0.7;">
+                      <path d="M 0,90 C 40,110 80,90 90,50 C 100,20 60,10 50,40 C 40,70 80,80 120,50" fill="none" stroke="#77836b" stroke-width="3.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+                      <g transform="translate(110, 25) rotate(15)">
+                        <polygon points="0,20 40,0 15,35" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                        <polyline points="0,20 20,15 40,0" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                        <polyline points="15,35 20,15" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                </div>
+                <div class="week-hero-images">
+                    <div class="polaroid hero-polaroid-1">
+                        <div class="tape-top"></div>
+                        <div class="photo"><img src="pics/week 2/gachon's ladybug.png" alt="Gachon Ladybug"></div>
+                        <div class="caption">gachon ladybug ♡</div>
+                    </div>
+                    <div class="polaroid hero-polaroid-2">
+                        <div class="photo"><img src="pics/week 2/gachon's infinity symbol.png" alt="Infinity Symbol"></div>
+                        <div class="caption handwriting">campus landmarks!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="torn-paper-edge"></div>
+    </div>
+
+    <main id="main-content" class="week-main">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#overview" class="active">overview</a>
+                <a href="#classes">first classes</a>
+                <a href="#food">suseo eats</a>
+                <a href="#seokchon">seokchon lake</a>
+                <a href="#shopping">city shopping</a>
+                <a href="#learned">what we learned</a>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <section id="overview" class="content-section">
+                <h3>overview</h3>
+                <p>week 2 was all about finally settling into a routine! classes officially started, which meant exploring our huge campus! we also explored beyond the university, checking out delicious food in suseo, relaxing at seokchon lake with our orientation group, and doing some much-needed shopping in myeongdong and seongsu.</p>
+            </section>
+
+            <section id="classes" class="content-section">
+                <h3>first classes & campus life</h3>
+                <div class="content-row">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/database lecture.png" alt="Database Lecture" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">database lecture 💻</div>
+                    </div>
+                    <p>the first week of classes was definitely an experience! our campus is incredibly hilly, so getting to class felt like a workout every single morning. my database lecture and discrete math classes were super interesting, though i’m still getting used to the different teaching styles here. the lecture halls are huge and feel so modern!</p>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>between classes, we spent a lot of time exploring the campus landmarks. gachon university is famous for its iconic architecture, like the massive infinity symbol structure. but another icon is the 'ladybug'—gachon's shuttle bus! it operates every 10 minutes on weekdays (though sometimes it's a little faster). unfortunately, it doesn't run when it rains or snows, but on clear days, it gets us up and down the incredibly steep hills, saving our legs and heavily cutting down our commute time. we took so many pictures around the campus! the views from where the ladybug drops us off are also absolutely breathtaking, overlooking the surrounding hills and city.</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/view from gachon's ladybug.png" alt="View from Ladybug" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">what a view!</div>
+                    </div>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/other orientation group at infinity symbol.png" alt="Orientation Group at Infinity Symbol" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">campus friends ♡</div>
+                    </div>
+                    <p>hanging out by the infinity symbol became one of our orientation groups' favorite meeting spots. running into friends between lectures, grabbing a quick coffee, and comparing our schedules made the massive campus feel so much more connected. the university really feels like its own vibrant little town, and having these central spots to catch up with familiar faces is the best part of the day.</p>
+                </div>
+            </section>
+
+            <section id="food" class="content-section">
+                <h3>suseo & campus eats</h3>
+                <div class="content-row">
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/samgyeopsal (suseo).png" alt="Samgyeopsal in Suseo" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">kbbq night!</div>
+                    </div>
+                    <p>we discovered that suseo, just a short subway ride away, is a treasure trove for amazing food! we had to try authentic korean bbq, so we treated ourselves to some incredible samgyeopsal. watching the thick cuts of pork belly sizzle on the grill was mouth-watering, and learning how to make the perfect lettuce wrap from the locals was incredible.</p>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>another day, we found this cozy little beef store in suseo. the menu was entirely in korean, which was a bit of a challenge, but the gyudon we ended up ordering was out of this world! it was so hearty and comforting, exactly what we needed after a long day of lectures and walking up and down the campus hills.</p>
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/gyudon (suseo).png" alt="Gyudon" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">delicious gyudon 🍚</div>
+                    </div>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/ramen near gachon uni station.png" alt="Ramen near station" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">ramen fix 🍜</div>
+                    </div>
+                    <p>we didn't even have to go far for good food! right outside our school, just before the gachon university subway station, there's a whole stretch of amazing eateries. we stopped by for some hot, comforting ramen one afternoon, and it totally hit the spot. having so many food options literally on our doorstep is amazing.</p>
+                </div>
+            </section>
+
+            <section id="seokchon" class="content-section">
+                <h3>seokchon lake trip with the orientation group</h3>
+                <div class="content-row">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/seokchon lake.png" alt="Seokchon Lake" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">seokchon lake 🦆</div>
+                    </div>
+                    <p>over the weekend, our orientation group planned a trip to seokchon lake! the weather was absolutely perfect for a stroll. walking around the lake with the view of lotte world tower in the background was magical. we spent hours just chatting, taking pictures, and getting to know each other better outside of the campus environment.</p>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>after our walk, we were starving, so we grabbed dinner together. we ordered a massive spread of bossam (boiled pork wrap) and gamja-chae-jeon (potato pancake). it was my first time trying these dishes and they instantly became some of my favorites! sharing a huge meal with everyone really made us feel like a tight-knit family.</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/bossam and gamja-chae-jeon (seokchon group).png" alt="Bossam and Potato Pancake" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">the best feast!</div>
+                    </div>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/seokchon orientation group.png" alt="Orientation Group at Seokchon" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">the whole crew 💖</div>
+                    </div>
+                    <p>after such a long and tiring week, ending it with this group was exactly what we needed. we took a final group photo before parting ways for the night. everyone brings such different perspectives from their home countries, but we all share the same excitement for the semester ahead. i'm really looking forward to more weekend trips with them!</p>
+                </div>
+            </section>
+
+            <section id="shopping" class="content-section">
+                <h3>city shopping</h3>
+                <div class="content-row">
+                    <p>of course, we had to hit up some of seoul's most famous shopping districts! we went to myeongdong and visited the massive apple store there. it was stunning! the energy in myeongdong is so vibrant, with street food vendors lining the roads and endless stores calling your name.</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/myeondong apple store.png" alt="Myeongdong Apple Store" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">myeongdong vibes!</div>
+                    </div>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <img src="pics/week 2/myeongdong.png" alt="Myeongdong Streets" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">shopping spree!</div>
+                    </div>
+                    <p>walking through the bustling streets, we couldn't resist trying some of the famous street food. there was everything from hotteok (sweet pancakes) to skewers and tanghulu! the bright neon signs lighting up the narrow alleys created the perfect backdrop for popping into the endless cosmetic stores and cute boutiques.</p>
+                </div>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>we also explored seongsu-dong, often called the brooklyn of seoul. it’s filled with aesthetic cafes and trendy shops. naturally, a trip to olive young was mandatory, especially since they were having their massive big sale! stocking up on all the trending korean skincare and makeup products at such a discount was incredible. my wallet definitely felt a little lighter after that trip, but it was completely worth it!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week 2/olive young (seongsu).png" alt="Olive Young in Seongsu" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">skincare heaven ✨</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="bottom-grids">
+                <div class="paper-block" id="learned">
+                    <h4>what we learned</h4>
+                    <ul>
+                        <li><span class="checkmark">✔</span> gachon's hills are the ultimate leg day workout</li>
+                        <li><span class="checkmark">✔</span> never trust a menu without pictures, but also sometimes take the risk!</li>
+                        <li><span class="checkmark">✔</span> seoul's public transport is incredibly efficient and easy to navigate</li>
+                        <li><span class="checkmark">✔</span> korean skincare really lives up to the hype</li>
+                    </ul>
+                </div>
+
+            </div>
+            <p style="text-align: center; margin-top: 50px; font-family: Caveat, cursive; font-size: 2rem; color: #68765e; transform: rotate(-2deg);">
+                week 2 was packed with learning, exploring, and eating! we can't wait to see what week 3 has in store... ♡
+            </p>
+        </article>
+    </main>
+
+    <div class="pagination">
+        <a class="btn" href="week1.html">← previous week</a>
+        <span class="btn btn-disabled" aria-disabled="true" title="coming soon!">week 3 →</span>
+    </div>
+
+    <!-- Green footer background area to simulate the bottom -->
+    <footer class="site-footer" id="about"><div class="handwriting">gachon diaries... ✈<small>A SEMESTER IN KOREA</small></div><p>made with ♡<br>by a student, for the memories</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

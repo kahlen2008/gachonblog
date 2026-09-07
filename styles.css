@@ -694,6 +694,28 @@ h1 {
     align-items: center;
 }
 
+@keyframes canvaBrushReveal {
+    0% {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+    100% {
+        -webkit-mask-position: 0% 0;
+        mask-position: 0% 0;
+    }
+}
+
+@keyframes contentReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero-bg-image {
     position: absolute;
     top: 0;
@@ -705,6 +727,19 @@ h1 {
     background-position: center;
     z-index: 1;
     opacity: 0.95;
+    
+    /* Canva Brush Reveal Effect - Wide SVG wipe */
+    -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 300 100' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='-50' y='-50' width='160' height='200' fill='black' /%3E%3Cpath d='M100,-20 L160,10 L100,30 L180,50 L90,70 L170,90 L100,120 Z' fill='black' /%3E%3Cpath d='M100,-20 L140,5 L110,25 L160,45 L105,65 L150,85 L100,120 Z' fill='black' /%3E%3Ccircle cx='170' cy='15' r='3' fill='black' /%3E%3Ccircle cx='185' cy='35' r='2.5' fill='black' /%3E%3Ccircle cx='165' cy='55' r='4' fill='black' /%3E%3Ccircle cx='190' cy='75' r='2' fill='black' /%3E%3Ccircle cx='175' cy='95' r='3.5' fill='black' /%3E%3C/svg%3E");
+    -webkit-mask-size: 300% 100%;
+    -webkit-mask-position: 100% 0;
+    -webkit-mask-repeat: no-repeat;
+    
+    mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 300 100' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='-50' y='-50' width='160' height='200' fill='black' /%3E%3Cpath d='M100,-20 L160,10 L100,30 L180,50 L90,70 L170,90 L100,120 Z' fill='black' /%3E%3Cpath d='M100,-20 L140,5 L110,25 L160,45 L105,65 L150,85 L100,120 Z' fill='black' /%3E%3Ccircle cx='170' cy='15' r='3' fill='black' /%3E%3Ccircle cx='185' cy='35' r='2.5' fill='black' /%3E%3Ccircle cx='165' cy='55' r='4' fill='black' /%3E%3Ccircle cx='190' cy='75' r='2' fill='black' /%3E%3Ccircle cx='175' cy='95' r='3.5' fill='black' /%3E%3C/svg%3E");
+    mask-size: 300% 100%;
+    mask-position: 100% 0;
+    mask-repeat: no-repeat;
+    
+    animation: canvaBrushReveal 1.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .hero-content-center {
@@ -712,6 +747,7 @@ h1 {
     z-index: 2;
     text-align: center;
     margin-top: -5rem;
+    animation: contentReveal 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.5s backwards;
 }
 
 .hero-title {
@@ -1220,4 +1256,61 @@ html{scroll-behavior:smooth;scroll-padding-top:2rem}body{overflow-x:clip;backgro
     .torn-paper-edge-large,.torn-paper-edge{height:44px}
     .site-footer::before{top:-46px;height:50px}
     .site-footer::after{top:-36px}
+}
+
+/* Photo Gallery */
+.photo-gallery-page { background: #f6efe8; min-height: 100vh; }
+.photo-gallery-header { text-align: center; margin: 3rem auto; }
+.photo-gallery-header h1 { font-size: 4rem; color: #433521; margin: 0; }
+.photo-gallery-header p { font-size: 1.2rem; color: #68765e; font-family: 'Inter', sans-serif; }
+.masonry-grid {
+    column-count: 4;
+    column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.masonry-grid .polaroid {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    background: #fff;
+    padding: 10px 10px 15px 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 2px;
+}
+.masonry-grid .polaroid img { width: 100%; display: block; border-radius: 2px; }
+.masonry-grid .polaroid .tape-top {
+    width: 60px; height: 20px; background: rgba(255, 255, 255, 0.4);
+    position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(-2deg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 2px; backdrop-filter: blur(2px); z-index: 10;
+}
+@media (max-width: 1000px) { .masonry-grid { column-count: 3; } }
+@media (max-width: 700px) { .masonry-grid { column-count: 2; } }
+@media (max-width: 450px) { .masonry-grid { column-count: 1; } }
+
+/* Page Transition */
+body {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+body.fade-out {
+    opacity: 0 !important;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Scroll Animation */
+.masonry-grid .polaroid {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.masonry-grid .polaroid.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -13,11 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ignore links that don't have an href or are targeting a new tab
             if (!href || link.target === '_blank' || e.ctrlKey || e.metaKey) return;
             
-            const isHashOnly = href.startsWith('#');
-            const isSamePageHash = href.includes('.html#') && href.split('#')[0] === window.location.pathname.split('/').pop();
-            const isExternal = href.startsWith('http');
+            const targetUrl = new URL(link.href, window.location.href);
+            const currentUrl = new URL(window.location.href);
+            
+            const normalizePath = (path) => path.replace(/\/index\.html$/, '').replace(/\/$/, '');
+            const isSamePage = normalizePath(targetUrl.pathname) === normalizePath(currentUrl.pathname);
+            const isSamePageHash = isSamePage && targetUrl.hash;
+            const isExternal = targetUrl.origin !== currentUrl.origin;
+            const isSpecialProtocol = !targetUrl.protocol.startsWith('http');
 
-            if (!isHashOnly && !isSamePageHash && !isExternal) {
+            if (!isSamePageHash && !isExternal && !isSpecialProtocol) {
                 e.preventDefault();
                 document.body.classList.add('fade-out');
                 setTimeout(() => {

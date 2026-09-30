@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
 </head>
+
 <body class="week-page">
     <div class="top-section">
         <header class="navbar">
@@ -31,65 +36,178 @@
             <div class="week-hero-content">
                 <div class="week-hero-text" style="position: relative;">
                     <h1>week 6</h1>
-                    <p class="week-date">Coming Soon!</p>
+                    <p class="week-date">30 Sept - 6 Oct 2026</p>
+                    <h2 class="week-subtitle handwriting">delicious food &<br>grocery runs ♡</h2>
+                    
+                    <svg class="plane-doodle" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" style="position: absolute; right: -210px; top: 45px; width: 160px; opacity: 0.7;">
+                      <path d="M 0,90 C 40,110 80,90 90,50 C 100,20 60,10 50,40 C 40,70 80,80 120,50" fill="none" stroke="#77836b" stroke-width="3.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+                      <g transform="translate(110, 25) rotate(15)">
+                        <polygon points="0,20 40,0 15,35" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                        <polyline points="0,20 20,15 40,0" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                        <polyline points="15,35 20,15" fill="none" stroke="#77836b" stroke-width="3.5" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                </div>
+                <div class="week-hero-images">
+                    <div class="polaroid hero-polaroid-1">
+                        <div class="tape-top"></div>
+                        <div class="photo"><img src="pics/week%206/coco%20ichibanya.png" alt="Coco Ichibanya"></div>
+                        <div class="caption">coco ichibanya 🍛</div>
+                    </div>
+                    <div class="polaroid hero-polaroid-2">
+                        <div class="photo"><img src="pics/week%206/samyetang.png" alt="Samgyetang"></div>
+                        <div class="caption handwriting">samgyetang 🍲</div>
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="torn-paper-edge"></div>
     </div>
 
     <main id="main-content" class="week-main">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#academics" class="active">academics & classes</a>
+                <a href="#katsu-spots">hi dojo &<br>coco ichibanya</a>
+                <a href="#samgyetang">local samgyetang</a>
+                <a href="#emart">grocery run<br>at emart</a>
+                <a href="#isaac-toast">isaac toast</a>
+                <a href="#internships">our productive<br>internship grind</a>
+            </nav>
+        </aside>
+
         <article class="content">
-            <p>more updates coming soon!</p>
-            
-            <!-- HIDDEN CONTENT MOVED FROM WEEK 5 -->
-            <!--
+            <section id="academics" class="content-section">
+                <h3>academics & classes</h3>
                 <div class="content-row" style="margin-top: 2rem;">
-                    <p>we also ordered the katsudon for 8,500 won, and once again, we were amazed by how affordable and generous the portions were! the breaded pork cutlet was fried to a pristine golden brown and gently simmered in a savory, slightly sweet dashi broth with perfectly cooked onions and egg. it was served steaming hot over rice, creating the ultimate comforting bowl. the egg was soft and custardy, binding everything together beautifully. finding such high-quality, soul-warming meals right inside our school feels like uncovering a well-kept secret. hi dojo has quickly become our favorite go-to spot between classes!</p>
+                    <p>back to academics, we've started diving into the hands-on portion of our database class! we are currently learning how to write sql queries. to make sure we truly understand the concepts, our professor created an incredibly helpful html notebook for us. it's completely interactive and allows us to practice writing and executing sql queries right from our browsers, whether we're in the lab or studying at home! it's been super useful for getting the hang of the syntax, and it makes learning database management so much more engaging and practical.</p>
                     <div class="inline-polaroid-container rotate-right-slight">
                         <div class="tape-top"></div>
-                        <img src="pics/week%205/katsudon%20(hi%20dojo).png" alt="Katsudon at Hi Dojo" class="inline-polaroid" />
+                        <img src="pics/week%206/database%20practical.png" alt="Database Practical SQL" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">sql query practice 💻</div>
+                    </div>
+                </div>
+
+                <div class="content-row" style="margin-top: 4rem;">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/kahoot.png" alt="Database Kahoot Quiz" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">kahoot champions! 🏆</div>
+                    </div>
+                    <p>to wrap up our database class for the week, our professor hosted a highly competitive kahoot quiz to test our knowledge! the energy in the room was electric as everyone fiercely competed for the top spots. incredibly, the top 3 spots on the podium were completely swept by nyp students! it was such a proud moment for all of us representing our home school here in korea. to make the competition even more exciting, our lecturer generously awarded bonus marks to everyone who placed in the top 10. it was a fantastic way to review the material and definitely kept us all on the edge of our seats!</p>
+                </div>
+
+                <div class="content-row" style="margin-top: 4rem;">
+                    <p>along with our database practicals, we also have a major presentation coming up for our discrete mathematics class! we have to tackle complex logical proofs and mathematical concepts, breaking them down into a comprehensive presentation for the professor and our classmates. it's definitely a bit nerve-wracking to think about presenting in front of everyone, but putting the slides together is really helping us consolidate our understanding of the tricky theorems. we haven't presented yet—we're just preparing for it—but it will feel incredibly rewarding once we finally wrap it up and get it over with!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/discrete%20maths%20presentation.png" alt="Discrete Maths Presentation" class="inline-polaroid" style="object-fit: contain; background-color: #fff;" />
+                        <div class="inline-caption handwriting">discrete maths! 📊</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="katsu-spots" class="content-section" style="margin-top: 4rem;">
+                <h3>hi dojo & coco ichibanya</h3>
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>we also ordered the katsudon for 8,500 won, and once again, we were amazed by how affordable and
+                        generous the portions were! the breaded pork cutlet was fried to a pristine golden brown and
+                        gently simmered in a savory, slightly sweet dashi broth with perfectly cooked onions and egg. it
+                        was served steaming hot over rice, creating the ultimate comforting bowl. the egg was soft and
+                        custardy, binding everything together beautifully. finding such high-quality, soul-warming meals
+                        right inside our school feels like uncovering a well-kept secret. hi dojo has quickly become our
+                        favorite go-to spot between classes!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/katsudon%20(hi%20dojo).png" alt="Katsudon at Hi Dojo"
+                            class="inline-polaroid" />
                         <div class="inline-caption handwriting">katsudon goodness 🍳</div>
                     </div>
                 </div>
 
-                <section id="coco-ichibanya" class="content-section" style="margin-top: 4rem;">
-                    <h3>coco ichibanya</h3>
-                    <div class="content-row">
-                        <p>speaking of katsu curry, we also had an incredible meal at coco ichibanya, a legendary spot that never disappoints! their japanese-style curry is world-famous, mostly because of the total customization—you can personalize everything from the rice portion to the exact spice level. we went all out and ordered their signature pork katsu curry. the pork cutlet was fried to absolute perfection, boasting a crispy panko crust that remarkably stayed crunchy even when drenched in their thick, savory curry sauce. pairing the tender meat with fluffy rice and piping hot curry created an explosion of comforting flavors. with wonderfully huge portions, coco ichibanya truly never misses when you need a hearty, soul-warming meal!</p>
-                        <div class="inline-polaroid-container rotate-right-slight">
-                            <div class="tape-top"></div>
-                            <img src="pics/week%205/coco%20ichibanya.png" alt="Coco Ichibanya Katsu Curry" class="inline-polaroid" />
-                            <div class="inline-caption handwriting">coco ichibanya! 🍛</div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="samgyetang" class="content-section" style="margin-top: 4rem;">
-                    <h3>local samgyetang</h3>
-                    <div class="content-row">
-                        <div class="inline-polaroid-container rotate-left-slight">
-                            <div class="tape-top"></div>
-                            <img src="pics/week%205/samyetang.png" alt="Samgyetang" class="inline-polaroid" />
-                            <div class="inline-caption handwriting">comforting soup 🍲</div>
-                        </div>
-                        <p>as the weather got chilly, we warmed up with some samgyetang (ginseng chicken soup) at a cozy local store nearby. the restaurant's rustic interiors and the friendly ajumma made it feel just like a home-cooked meal! uniquely, the chicken wasn't stuffed with the usual glutinous rice; instead, we got a generous bowl of white rice on the side. the fall-off-the-bone tender meat and the deeply nourishing, ginseng-rich broth were absolutely perfect. dipping the meat in salt and pairing it with rice was the ultimate comfort food to end our busy week!</p>
-                    </div>
-                </section>
-
-                <div class="content-row" style="margin-top: 2rem;">
+                <div class="content-row" style="margin-top: 4rem;">
                     <div class="inline-polaroid-container rotate-left-slight">
                         <div class="tape-top"></div>
-                        <img src="pics/week%205/banana%20milk.jpeg" alt="Banana Milk" class="inline-polaroid" />
+                        <img src="pics/week%206/coco%20ichibanya.png" alt="Coco Ichibanya Katsu Curry"
+                            class="inline-polaroid" />
+                        <div class="inline-caption handwriting">coco ichibanya! 🍛</div>
+                    </div>
+                    <p>speaking of katsu curry, we also had an incredible meal at coco ichibanya, a legendary spot that
+                        never disappoints! their japanese-style curry is world-famous, mostly because of the total
+                        customization—you can personalize everything from the rice portion to the exact spice level. we
+                        went all out and ordered their signature pork katsu curry. the pork cutlet was fried to absolute
+                        perfection, boasting a crispy panko crust that remarkably stayed crunchy even when drenched in
+                        their thick, savory curry sauce. pairing the tender meat with fluffy rice and piping hot curry
+                        created an explosion of comforting flavors. with wonderfully huge portions, coco ichibanya truly
+                        never misses when you need a hearty, soul-warming meal!</p>
+                </div>
+            </section>
+
+            <section id="samgyetang" class="content-section" style="margin-top: 4rem;">
+                <h3>local samgyetang</h3>
+                <div class="content-row">
+                    <p>as the weather got chilly, we warmed up with some samgyetang (ginseng chicken soup) at a cozy
+                        local store nearby. the restaurant's rustic interiors and the friendly ajumma made it feel just
+                        like a home-cooked meal! uniquely, the chicken wasn't stuffed with the usual glutinous rice;
+                        instead, we got a generous bowl of white rice on the side. the fall-off-the-bone tender meat and
+                        the deeply nourishing, ginseng-rich broth were absolutely perfect. dipping the meat in salt and
+                        pairing it with rice was the ultimate comfort food to end our busy week!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/samyetang.png" alt="Samgyetang" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">comforting soup 🍲</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="emart" class="content-section" style="margin-top: 4rem;">
+                <h3>grocery run at emart</h3>
+                <div class="content-row">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/banana%20milk.jpeg" alt="Banana Milk" class="inline-polaroid" />
                         <div class="inline-caption handwriting">addicting! 🍌</div>
                     </div>
-                    <p>later, we did our weekly grocery run at emart. wandering through the aisles of korean snacks and fresh food is a whole experience on its own. the one thing we absolutely can't get enough of is the classic korean banana milk! it is seriously so addicting and has become our daily staple. it's the perfect sweet and creamy pick-me-up after a long day of classes. picking up a fresh pack of these is always the highlight of our grocery trips!</p>
+                    <p>later, we did our weekly grocery run at emart. wandering through the aisles of korean snacks and
+                        fresh food is a whole experience on its own. the one thing we absolutely can't get enough of is
+                        the classic korean banana milk! it is seriously so addicting and has become our daily staple.
+                        we recently learned that the iconic binggrae brand uses different cap colors to help you tell them apart—the classic original banana milk always has a green cap. if you see a light blue cap, that's the "light" version with lower calories and less sugar, and the black cap signifies their newer "zero" added sugar version! it's the perfect sweet and creamy pick-me-up after a long day of classes. picking up a fresh
+                        pack of these is always the highlight of our grocery trips!</p>
                 </div>
-                
-                <div class="polaroid hero-polaroid-2">
-                    <div class="photo"><img src="pics/week%205/emart%20food.jpeg" alt="Emart Food"></div>
-                    <div class="caption handwriting">emart goodies 🍱</div>
+
+                <div class="content-row" style="margin-top: 2rem;">
+                    <p>besides stocking up on banana milk, we couldn't resist checking out emart's famous ready-to-eat deli section! they always have such an incredible variety of packaged meals, from fresh sushi to crispy fried chicken and full bento boxes. especially towards the end of the day, you can often find great discounts on these delicious meals. we picked up a few of these affordable goodies to bring back to the dorm for a late-night feast. the quality and convenience of grocery store food here in korea never ceases to amaze us!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/emart%20food.jpeg" alt="Emart Food" class="inline-polaroid" />
+                        <div class="inline-caption handwriting">emart goodies 🍱</div>
+                    </div>
                 </div>
-            -->
+            </section>
+
+            <section id="isaac-toast" class="content-section" style="margin-top: 4rem;">
+                <h3>isaac toast</h3>
+                <div class="content-row">
+                    <div class="inline-polaroid-container rotate-left-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/isaac%20toast.png" alt="Isaac Toast" class="inline-polaroid" style="object-position: center bottom;" />
+                        <div class="inline-caption handwriting">scrambled ham cheese! 🥪</div>
+                    </div>
+                    <p>for a quick and delicious bite, we finally tried the famous isaac toast! there's a really convenient branch right along the stretch of shops just outside our school, super close to the subway exit. i ordered their classic scrambled ham cheese toast, and honestly, it completely exceeded my expectations. everything is made to order, so it was served piping hot with the sweet butter sizzling on the toast. the portion was surprisingly huge, especially considering it was only 4,200 won! the signature sweet and savory kiwi sauce combined with the fluffy scrambled eggs and melted cheese makes it absolutely addictive. it's truly the perfect, affordable on-the-go meal before heading to class!</p>
+                </div>
+            </section>
+
+            <section id="internships" class="content-section" style="margin-top: 4rem;">
+                <h3>our productive internship grind</h3>
+                <div class="content-row">
+                    <p>even though we are having the absolute time of our lives exploring korea, reality still calls! while balancing our studies and traveling, we are also actively applying for internships back home. it definitely takes some extra effort and discipline to juggle networking, polishing our resumes, and keeping track of application deadlines while being on exchange. but setting aside some dedicated cafe study time to grind out these applications together makes the process a lot more manageable. keeping our fingers crossed for good news soon!</p>
+                    <div class="inline-polaroid-container rotate-right-slight">
+                        <div class="tape-top"></div>
+                        <img src="pics/week%206/internship.png" alt="Internship Application" class="inline-polaroid" style="object-fit: contain; background-color: #fff;" />
+                        <div class="inline-caption handwriting">the grind never stops! 💼</div>
+                    </div>
+                </div>
+            </section>
         </article>
     </main>
 
@@ -99,8 +217,12 @@
     </div>
 
     <!-- Green footer background area to simulate the bottom -->
-    <footer class="site-footer" id="about"><div class="handwriting">gachon diaries... ✈<small>A SEMESTER IN KOREA</small></div><p>made with ♡<br>by a student, for the memories</p></footer>
+    <footer class="site-footer" id="about">
+        <div class="handwriting">gachon diaries... ✈<small>A SEMESTER IN KOREA</small></div>
+        <p>made with ♡<br>by a student, for the memories</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
